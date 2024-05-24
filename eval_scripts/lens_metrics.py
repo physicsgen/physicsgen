@@ -55,7 +55,7 @@ if __name__ == "__main__":
     results = []
 
     # Use tqdm to create a progress bar for the loop
-    for index, sample_row in tqdm(test_df[:10].iterrows(), total=test_df.shape[0], desc="Evaluating samples"):
+    for index, sample_row in tqdm(test_df.iterrows(), total=test_df.shape[0], desc="Evaluating samples"):
         # Check if prediction is available
         if not os.path.exists(f"{pred_dir}/y_{index}.png"):
             print(f"Prediction for sample {index} not found.")

@@ -7,6 +7,11 @@ The image-to-image translation abilities of generative learning models have rece
 - What speedups can be achieved by replacing differential equation based simulations?
 - How can the physical correctness of model outputs be enforced?
 
+
+![teaserfig](figures/TeaserFig.svg "Teaser Figure")
+
+
+
 ## Download Datasets
 
 The dataset used for evaluation is publicly available and published via Zenodo, ensuring easy access and reproducibility of our research findings TODO.
@@ -70,3 +75,7 @@ python sound_metrics.py --data_dir data/true --pred_dir data/pred --output evalu
 - `--data_dir`: Directory containing true sound maps and `test.csv`.
 - `--pred_dir`: Directory containing predicted sound maps.
 - `--output`: Path to save the evaluation results.
+
+
+## License
+This dataset is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/)

@@ -62,6 +62,12 @@ if __name__ == "__main__":
             print(f"{pred_dir}/y_{index}.png")
             continue
 
+        # Check if the label image is available
+        if not os.path.exists(f"{data_dir}/{sample_row['distortion_path']}"):
+            print(f"Label image for sample {index} not found.")
+            print(f"{data_dir}/{sample_row['distortion_path']}")
+            continue
+
         # Calculate the error
         error, (error_x, error_y) = calculate_landmark_error(f"{data_dir}/{sample_row['distortion_path']}", f"{pred_dir}/y_{index}.png")
         if error is not None:

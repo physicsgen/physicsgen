@@ -10,3 +10,63 @@ The image-to-image translation abilities of generative learning models have rece
 ## Download Datasets
 
 The dataset used for evaluation is publicly available and published via Zenodo, ensuring easy access and reproducibility of our research findings TODO.
+
+
+## Code for baseline experiments
+
+The code is located in the [GitHub repository](https://github.com/physicsgen/physicsgen).
+
+This script evaluates the accuracy of predicted sound propagation against true data using metrics such as Mean Absolute Error (MAE) and Mean Absolute Percentage Error (MAPE), with special consideration for visibility based on Open Street Map data.
+
+**Project Structure:**
+
+```
+project_root/
+│
+├── data/                         # Dedicated data folder
+│   └── urban_sound_25k_baseline/ # Download this via provided DOI
+│       ├── test/
+│       │   ├── test.csv
+│       │   ├── soundmaps/
+│       │   └── buildings/
+│       │
+│       └── pred/                 # Your predictions
+│           ├── y_0.png
+│           └── ...
+│
+└── eval_scripts/
+    ├── lens_metrics.py
+    └── sound_metrics.py
+```
+
+The indexing system for predicted sound propagation images in the `pred` folder aligns directly with the `test.csv` dataframe rows. Each predicted image file, named as `y_{index}.png`, corresponds to the test data's row at the same index, with index 0 referring to the dataframe's first row.
+
+### Landmark Evaluation Script
+
+**Description:**
+Evaluates the accuracy of facial landmark predictions by comparing them to ground truth images.
+
+**Usage:**
+```sh
+python lens_metrics.py --data_dir data/true --pred_dir data/pred --output results/
+```
+
+**Arguments:**
+- `--data_dir`: Directory containing true label images and `test.csv`.
+- `--pred_dir`: Directory containing predicted landmark images.
+- `--output`: Directory to save the results.
+
+### Sound Propagation Evaluation Script
+
+**Description:**
+Evaluates sound propagation predictions by comparing them to ground truth noise maps, including Line-of-Sight (LoS) and Non-Line-of-Sight (NLoS) errors.
+
+**Usage:**
+```sh
+python sound_metrics.py --data_dir data/true --pred_dir data/pred --output evaluation.csv
+```
+
+**Arguments:**
+- `--data_dir`: Directory containing true sound maps and `test.csv`.
+- `--pred_dir`: Directory containing predicted sound maps.
+- `--output`: Path to save the evaluation results.

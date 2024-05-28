@@ -21,8 +21,6 @@ The dataset used for evaluation is publicly available and published via Zenodo, 
 
 The code is located in the [GitHub repository](https://github.com/physicsgen/physicsgen).
 
-This script evaluates the accuracy of predicted sound propagation against true data using metrics such as Mean Absolute Error (MAE) and Mean Absolute Percentage Error (MAPE), with special consideration for visibility based on Open Street Map data.
-
 **Project Structure:**
 
 ```

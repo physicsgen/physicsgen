@@ -44,21 +44,6 @@ project_root/
 
 The indexing system for predicted sound propagation images in the `pred` folder aligns directly with the `test.csv` dataframe rows. Each predicted image file, named as `y_{index}.png`, corresponds to the test data's row at the same index, with index 0 referring to the dataframe's first row.
 
-### Landmark Evaluation Script
-
-**Description:**
-Evaluates the accuracy of facial landmark predictions by comparing them to ground truth images.
-
-**Usage:**
-```sh
-python lens_metrics.py --data_dir data/true --pred_dir data/pred --output results/
-```
-
-**Arguments:**
-- `--data_dir`: Directory containing true label images and `test.csv`.
-- `--pred_dir`: Directory containing predicted landmark images.
-- `--output`: Directory to save the results.
-
 ### Sound Propagation Evaluation Script
 
 **Description:**
@@ -74,6 +59,21 @@ python sound_metrics.py --data_dir data/true --pred_dir data/pred --output evalu
 - `--pred_dir`: Directory containing predicted sound maps.
 - `--output`: Path to save the evaluation results.
 
+
+### Lens Evaluation Script
+
+**Description:**
+Evaluates the accuracy of facial landmark predictions by comparing them to ground truth images.
+
+**Usage:**
+```sh
+python lens_metrics.py --data_dir data/true --pred_dir data/pred --output results/
+```
+
+**Arguments:**
+- `--data_dir`: Directory containing true label images and `test.csv`.
+- `--pred_dir`: Directory containing predicted landmark images.
+- `--output`: Directory to save the results.
 
 ## License
 This dataset is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/)

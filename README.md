@@ -12,7 +12,7 @@ The image-to-image translation abilities of generative learning models have rece
 
 ## Download Datasets
 
-The dataset used for evaluation is publicly available and published via Zenodo, ensuring easy access and reproducibility of our research findings [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11401239.svg)](https://doi.org/10.5281/zenodo.11401239).
+The dataset used for evaluation is publicly available and published via Zenodo, ensuring easy access and reproducibility of our research findings [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11448582.svg)](https://doi.org/10.5281/zenodo.11448582).
 
 
 ## Code for baseline experiments

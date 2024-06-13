@@ -6,7 +6,7 @@ The image-to-image translation abilities of generative learning models have rece
 - How can the physical correctness of model outputs be enforced?
 
 
-![teaserfig](figures/TeaserFig.svg "Teaser Figure")
+![teaserfig](figures/TeaserFig.png "Teaser Figure")
 
 
 

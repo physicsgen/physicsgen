@@ -100,15 +100,20 @@ The table below presents baseline performance metrics for various architectural 
 | Combined    | Diffusion    | **1.57**         | 21.45          | **1.26**    | **2.21**     | 13.07     | **40.38**      |
 
 ## Lens Distortion
+The table presents a comparative analysis of different models' performance in accurately predicting facial landmarks under varying lens distortion settings, represented by the coefficients \( p_1 \) and \( p_2 \). It details the combined error, X Error, Y Error, and Shift for each model, highlighting how each model copes with horizontal and vertical distortion impacts separately.
 
-| Model | Comb. ($p_1 ≠ 0$) | X Err. ($p_1 ≠ 0$) | Y Err. ($p_1 ≠ 0$) | Shift ($p_1 ≠ 0$) | Comb. ($p_2 ≠ 0$) | X Err. ($p_2 ≠ 0$) | Y Err. ($p_2 ≠ 0$) | Shift ($p_2 ≠ 0$) |
-|-------|-------------------|--------------------|--------------------|-------------------|-------------------|--------------------|--------------------|-------------------|
-| UNet  | 2.82              | 1.28               | 2.15               | -0.87             | 2.36              | 1.33               | 1.60               | -0.27             |
-| GAN   | 2.00              | 0.99               | 1.43               | -0.44             | **1.77**          | **1.02**           | **1.14**           | -0.13             |
-| DDPM  | **1.93**          | **0.94**           | **1.39**           | -0.45             | 2.13              | 1.39               | 1.23               | 0.16              |
+
+| Model | $p_1 ≠ 0$ |     |     |       | $p_2 ≠ 0$ |     |     |       |
+|-------|-----------|-----|-----|-------|-----------|-----|-----|-------|
+|       | Comb.     | X Err. | Y Err. | Shift | Comb.     | X Err. | Y Err. | Shift |
+| UNet  | 2.82      | 1.28   | 2.15   | -0.87 | 2.36      | 1.33   | 1.60   | -0.27 |
+| GAN   | 2.00      | 0.99   | 1.43   | -0.44 | **1.77**  | **1.02** | **1.14** | -0.13 |
+| DDPM  | **1.93**  | **0.94** | **1.39** | -0.45 | 2.13      | 1.39   | 1.23   | 0.16  |
+
 
 
 ## Dynamics of rolling and bouncing movements
+The table evaluates the performance of three generative models—GAN, UNet, and DDPM—on four key error metrics: Position X, Position Y, Rotation, and Roundness. These metrics assess each model's ability to accurately predict ball position, rotation, and shape in a controlled simulation environment, highlighting their precision in handling geometric distortions.
 
 | Model | Position X            | Position Y            | Rotation              | Roundness            |
 |-------|-----------------------|-----------------------|-----------------------|----------------------|

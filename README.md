@@ -166,7 +166,22 @@ The table evaluates the performance of three generative models—GAN, UNet, and 
 
 ### Contribute to the Leaderboard
 
-TBA
+We welcome contributions from the research community! If you have conducted research on sound propagation prediction and have results that outperform those listed in our leaderboard, or if you've developed a new architectural approach that shows promise, we invite you to share your findings with us.
+
+Please submit your results, along with a link to your publication, to martin.spitznagel@hs-offenburg.de. Submissions should include detailed performance metrics and a description of the methodology used. Accepted contributions will be updated on the leaderboard.
+
+## Paper
+
+Accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/)) 2025.
+
+Preprint is available here: TBA
 
 ## License
 This dataset is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+## Funding Acknowledgement
+We express our gratitude for the financial support provided by the German Federal Ministry of Education and Research (BMBF). This project is part of the "Forschung an Fachhochschulen in Kooperation mit Unternehmen (FH-Kooperativ)" program, within the joint project [KI-Bohrer](https://www.ki-bohrer.de/), and is funded under the grant number 13FH525KX1.
+
+<p align="center">
+  <img src="figures/bmbf_logo.png" alt="BMBF-Logo">
+</p>

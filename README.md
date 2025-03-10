@@ -174,7 +174,7 @@ Please submit your results, along with a link to your publication, to martin.spi
 
 Accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/)) 2025.
 
-Preprint is available here: TBA
+Preprint is available here: [https://arxiv.org/abs/2503.05333](https://arxiv.org/abs/2503.05333)
 
 ## License
 This dataset is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/)

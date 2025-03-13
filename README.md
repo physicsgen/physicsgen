@@ -52,11 +52,14 @@ Data is divided into `train`, `test`, and `eval` splits. For efficient storage a
 You can load and use the dataset with the Hugging Face `datasets` library. For example, to load the **sound_combined** variant:
 ```python
 from datasets import load_dataset
+
 dataset = load_dataset("mspitzna/physicsgen", name="sound_combined", trust_remote_code=True)
+
 # Access a sample from the training split.
 sample = dataset["train"][0]
 input_img = sample["osm"]
 target_img = sample["soundmap_512"]
+
 # plot Input vs Target Image for a single sample
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
 ax1.imshow(input_img)

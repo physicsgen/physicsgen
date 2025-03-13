@@ -18,9 +18,51 @@
 </table>
 
 
-## Download Datasets
+## Download Datasets & Hugging Face Datasets
 
-The dataset used for evaluation is publicly available and published via Zenodo, ensuring easy access and reproducibility of our research findings [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11448582.svg)](https://doi.org/10.5281/zenodo.11448582).
+The dataset used for evaluation, which contains 300k image pairs across three diverse simulation scenarios, is publicly available via Zenodo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11448582.svg)](https://doi.org/10.5281/zenodo.11448582) and also available through [Hugging Face Datasets](https://huggingface.co/datasets/mspitzna/physicsgen).
+
+### Variants
+
+- **Urban Sound Propagation:** [sound_baseline, sound_reflection, sound_diffraction, sound_combined]
+
+  Each sound example includes:
+  - Geographic coordinates: `lat`, `long`
+  - Sound intensity: `db`
+  - Images: `soundmap`, `osm`, `soundmap_512`
+  - Additional metadata: `temperature`, `humidity`, `yaw`, `sample_id`
+
+- **Lens Distortion:** [lens_p1, lens_p2]
+
+  Each lens example includes:
+  - Calibration parameters: `fx`, `k1`, `k2`, `k3`, `p1`, `p2`, `cx`
+  - Label file path: `label_path`
+  - Note: The script for applying the distortion to the CelebA Dataset is located [here](https://github.com/physicsgen/physicsgen/blob/main/eval_scripts/hf_apply_lens_distortion.py).
+
+- **Dynamics of rolling and bouncing movements:** [ball_roll, ball_bounce]
+
+  Each ball example includes:
+  - Metadata: `ImgName`, `StartHeight`, `GroundIncli`, `InputTime`, `TargetTime`
+  - Images: `input_image`, `target_image`
+
+Data is divided into `train`, `test`, and `eval` splits. For efficient storage and faster uploads, the data is converted and stored as Parquet files with image data stored as binary blobs.
+
+## Usage
+
+You can load and use the dataset with the Hugging Face `datasets` library. For example, to load the **sound_combined** variant:
+```python
+from datasets import load_dataset
+dataset = load_dataset("mspitzna/physicsgen", name="sound_combined", trust_remote_code=True)
+# Access a sample from the training split.
+sample = dataset["train"][0]
+input_img = sample["osm"]
+target_img = sample["soundmap_512"]
+# plot Input vs Target Image for a single sample
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+ax1.imshow(input_img)
+ax2.imshow(target_img)
+plt.show()
+```
 
 
 ## Code for baseline experiments

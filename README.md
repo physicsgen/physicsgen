@@ -145,7 +145,7 @@ The table below presents baseline performance metrics for various architectural 
 | Baseline       | SD(w.CA)     | 3.76    | 3.34     | 17.42     | 35.18      | 2961.027               |
 | Baseline       | SD           | 2.12    | 1.08     | 13.23     | 32.46      | 2970.86                |
 | Baseline       | DDBM         | **1.61**| 2.17     | 17.50     | 65.24      | 3732.21                |
-| Baseline       | Full Glow    | 1.84    | **0.65** | **8.83**  | **4.52**   | 101.7                  |
+| Baseline       | Full Glow<sup>1</sup>    | 1.84    | **0.65** | **8.83**  | **4.52**   | 101.7                  |
 |                |              |         |          |           |            |                        |
 | Diffraction    | Simulation   | 0.00    | 0.00     | 0.00      | 0.00       | 206000                 |
 | Diffraction    | convAE       | 3.59    | 8.04     | 13.77     | 32.09      | 0.128                  |
@@ -155,7 +155,7 @@ The table below presents baseline performance metrics for various architectural 
 | Diffraction    | DDPM         | 1.59    | 3.27     | 8.25      | <ins>20.30</ins>      | 3986.353               |
 | Diffraction    | SD(w.CA)     | 2.46    | 7.72     | 10.14     | 31.23      | 2961.027               |
 | Diffraction    | SD           | 1.33    | 5.07     | 8.15      | 24.45      | 2970.86                |
-| Diffraction    | Full Glow    | **0.79**| **2.63** | **2.43**  | **11.12**  | 107.62                 |
+| Diffraction    | Full Glow<sup>1</sup>    | **0.79**| **2.63** | **2.43**  | **11.12**  | 107.62                 |
 |                |              |         |          |           |            |                        |
 | Reflection     | Simulation   | 0.00    | 0.00     | 0.00      | 0.00       | 251000                 |
 | Reflection     | convAE       | 3.83    | 6.56     | 20.67     | 93.54      | 0.128                  |
@@ -166,7 +166,7 @@ The table below presents baseline performance metrics for various architectural 
 | Reflection     | SD(w.CA)     | 3.81    | 6.82     | 19.78     | 81.61      | 2961.027               |
 | Reflection     | SD           | 2.53    | 5.26     | 15.04     | 55.27      | 2970.86                |
 | Reflection     | DDBM         | **1.93**| 6.38     | 18.34     | 79.13      | 3732.21                |
-| Reflection     | Full Glow    | 2.06    | **3.64** | **8.98**  | **22.69**  | 102.3                  |
+| Reflection     | Full Glow<sup>1</sup>    | 2.06    | **3.64** | **8.98**  | **22.69**  | 102.3                  |
 
 
 ## Lens Distortion
@@ -217,11 +217,35 @@ We welcome contributions from the research community! If you have conducted rese
 
 Please submit your results, along with a link to your publication, to martin.spitznagel@hs-offenburg.de. Submissions should include detailed performance metrics and a description of the methodology used. Accepted contributions will be updated on the leaderboard.
 
+### References
+
+1. Achim Eckerle, "Full-Glow normalizing flow architectures for physics-informed urban sound propagation simulation," Bachelor Thesis, IMLA Offenburg University, 2024. 
+
+
 ## Paper
 
-Accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/)) 2025.
+Accepted at the IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/)) 2025.
 
 Preprint is available here: [https://arxiv.org/abs/2503.05333](https://arxiv.org/abs/2503.05333)
+
+The CVPR paper can be found [here](https://openaccess.thecvf.com/content/CVPR2025/html/Spitznagel_PhysicsGen_Can_Generative_Models_Learn_from_Images_to_Predict_Complex_CVPR_2025_paper.html).
+
+---
+
+## Citing PhysicsGen
+
+If you find this work helpful, please consider citing our paper:
+
+```bibtex
+@InProceedings{Spitznagel_2025_CVPR,
+    author    = {Spitznagel, Martin and Vaillant, Jan and Keuper, Janis},
+    title     = {PhysicsGen: Can Generative Models Learn from Images to Predict Complex Physical Relations?},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {11125-11134}
+}
+```
 
 ## License
 This dataset is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/)

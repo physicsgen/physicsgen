@@ -228,5 +228,5 @@ This dataset is licensed under a [Creative Commons Attribution-NonCommercial-NoD
 We express our gratitude for the financial support provided by the German Federal Ministry of Education and Research (BMBF). This project is part of the "Forschung an Fachhochschulen in Kooperation mit Unternehmen (FH-Kooperativ)" program, within the joint project [KI-Bohrer](https://www.ki-bohrer.de/), and is funded under the grant number 13FH525KX1.
 
 <p align="center">
-  <img src="figures/bmbf_logo.png" alt="BMBF-Logo">
+  <img src="figures/bmbf_logo_en.png" alt="BMBF-Logo">
 </p>

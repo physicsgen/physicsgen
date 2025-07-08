@@ -139,32 +139,34 @@ The table below presents baseline performance metrics for various architectural 
 | Baseline       | Simulation   | 0.00    | 0.00     | 0.00      | 0.00       | 204700                 |
 | Baseline       | convAE       | 3.67    | 2.74     | 20.24     | 67.13      | 0.128                  |
 | Baseline       | VAE          | 3.92    | 2.84     | 21.33     | 75.58      | 0.124                  |
-| Baseline       | UNet         | 2.29    | 1.73     | <ins>12.91</ins> | <ins>37.57</ins> | 0.138 |
-| Baseline       | Pix2Pix      | <ins>1.73</ins> | <ins>1.19</ins> | **9.36** | **6.75** | 0.138  |
+| Baseline       | UNet         | 2.29    | 1.73     |   12.91   | 37.57      | 0.138                  |
+| Baseline       | Pix2Pix      | 1.73    | 1.19     | 9.36      | 6.75       | 0.138                  |
 | Baseline       | DDPM         | 2.42    | 3.26     | 15.57     | 51.08      | 3986.353               |
 | Baseline       | SD(w.CA)     | 3.76    | 3.34     | 17.42     | 35.18      | 2961.027               |
-| Baseline       | SD           | 2.12    | **1.08** | 13.23     | 32.46      | 2970.86                |
-| Baseline       | DDBM         | **1.61** | 2.17    | 17.50     | 65.24      | 3732.21                |
+| Baseline       | SD           | 2.12    | 1.08     | 13.23     | 32.46      | 2970.86                |
+| Baseline       | DDBM         | **1.61**| 2.17     | 17.50     | 65.24      | 3732.21                |
+| Baseline       | Full Glow    | 1.84    | **0.65** | **8.83**  | **4.52**   | 101.7                  |
 |                |              |         |          |           |            |                        |
 | Diffraction    | Simulation   | 0.00    | 0.00     | 0.00      | 0.00       | 206000                 |
 | Diffraction    | convAE       | 3.59    | 8.04     | 13.77     | 32.09      | 0.128                  |
 | Diffraction    | VAE          | 3.92    | 8.22     | 14.46     | 32.57      | 0.124                  |
-| Diffraction    | UNet         | <ins>0.94</ins>    | **3.27** | <ins>4.22</ins>      | 22.36      | 0.138                  |
-| Diffraction    | Pix2Pix      | **0.91** | <ins>3.36</ins>    | **3.51**  | **18.06**  | 0.138                  |
-| Diffraction    | DDPM         | 1.59    | **3.27** | 8.25      | <ins>20.30</ins>      | 3986.353               |
+| Diffraction    | UNet         | 0.94    |   3.27   | 4.22      | 22.36      | 0.138                  |
+| Diffraction    | Pix2Pix      | 0.91    |   3.36   | 3.51      | 18.06      | 0.138                  |
+| Diffraction    | DDPM         | 1.59    | 3.27     | 8.25      | <ins>20.30</ins>      | 3986.353               |
 | Diffraction    | SD(w.CA)     | 2.46    | 7.72     | 10.14     | 31.23      | 2961.027               |
 | Diffraction    | SD           | 1.33    | 5.07     | 8.15      | 24.45      | 2970.86                |
-| Diffraction    | DDBM         | 1.35    | 3.35     | 11.22     | 23.56      | 3732.21                |
+| Diffraction    | Full Glow    | **0.79**| **2.63** | **2.43**  | **11.12**  | 107.62                 |
 |                |              |         |          |           |            |                        |
 | Reflection     | Simulation   | 0.00    | 0.00     | 0.00      | 0.00       | 251000                 |
 | Reflection     | convAE       | 3.83    | 6.56     | 20.67     | 93.54      | 0.128                  |
 | Reflection     | VAE          | 4.15    | 6.32     | 21.57     | 92.47      | 0.124                  |
-| Reflection     | UNet         | 2.29    | 5.72     | <ins>12.75</ins>     | 80.46      | 0.138                  |
-| Reflection     | Pix2Pix      | <ins>2.14</ins> | **4.79** | **11.30** | **30.67**  | 0.138                  |
+| Reflection     | UNet         | 2.29    | 5.72     | 12.75     | 80.46      | 0.138                  |
+| Reflection     | Pix2Pix      | 2.14    | 4.79     | 11.30     | 30.67      | 0.138                  |
 | Reflection     | DDPM         | 2.74    | 7.93     | 17.85     | 80.38      | 3986.353               |
 | Reflection     | SD(w.CA)     | 3.81    | 6.82     | 19.78     | 81.61      | 2961.027               |
-| Reflection     | SD           | 2.53    | <ins>5.26</ins>     | 15.04     | <ins>55.27</ins>      | 2970.86                |
-| Reflection     | DDBM         | **1.93** | 6.38    | 18.34     | 79.13      | 3732.21                |
+| Reflection     | SD           | 2.53    | 5.26     | 15.04     | 55.27      | 2970.86                |
+| Reflection     | DDBM         | **1.93**| 6.38     | 18.34     | 79.13      | 3732.21                |
+| Reflection     | Full Glow    | 2.06    | **3.64** | **8.98**  | **22.69**  | 102.3                  |
 
 
 ## Lens Distortion
